@@ -1,0 +1,28 @@
+-- MySQL --
+
+
+-- Teachers Table --
+
+CREATE TABLE Teachers(
+  ID int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  FIRST_NAME varchar(255) NOT NULL,
+  LAST_NAME varchar(255) NOT NULL,
+  GENDER varchar(255) NOT NULL,
+  SUBJECT varchar(255) NOT NULL
+);
+
+-- Pupils Table --
+CREATE TABLE Pupils (
+  ID int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  FIRST_NAME varchar(255) NOT NULL,
+  LAST_NAME varchar(255) NOT NULL,
+  GENDER varchar(255) NOT NULL,
+  CLASS varchar(255) NOT NULL
+);
+
+-- Classes Table --
+CREATE TABLE Classes (
+  ID int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  PUPIL_ID int(11) NOT NULL,
+  TEACHER_ID int(11) NOT NULL
+);

@@ -1,0 +1,4 @@
+SELECT t.ID,t.FIRST_NAME,t.LAST_NAME,t.GENDER,t.SUBJECT FROM Pupils p
+    INNER JOIN Classes c ON c.PUPIL_ID = p.ID
+    INNER JOIN Teachers t ON c.TEACHER_ID = t.ID
+    WHERE p.FIRST_NAME = "გიორგი";
