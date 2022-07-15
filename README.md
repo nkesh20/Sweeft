@@ -1,2 +1,0 @@
-# Sweeft
-Sweeft Digital Assignment
